@@ -1,5 +1,115 @@
 @use '../util' as *;
 
 .card {
-  padding: rem(20);
+  width: rem(255); //tmp
+  border-radius: rem(5);
+  background-color: var(--dark-card-bg);
+  padding: rem(25);
+  text-align: center;
+
+  &--facebook {
+    border-top: rem(4) solid var(--facebook);
+  }
+
+  &--twitter {
+    border-top: rem(4) solid var(--twitter);
+  }
+
+  &--instagram {
+    // Source: https://css-tricks.com/gradient-borders-in-css/
+    position: relative;
+    border-top: rem(4) solid transparent;
+    background-clip: padding-box;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin-top: rem(-4);
+      border-radius: inherit;
+      background: linear-gradient(
+        to right,
+        var(--instagram-start),
+        var(--instagram-end)
+      );
+    }
+  }
+
+  &--youtube {
+    border-top: rem(4) solid var(--youtube);
+  }
+
+  &__platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(28);
+  }
+
+  &__icon {
+    margin-right: rem(8);
+
+    &--facebook {
+    }
+
+    &--twitter {
+    }
+
+    &--instagram {
+    }
+
+    &--youtube {
+    }
+  }
+
+  &__username {
+    font-weight: 700;
+    font-size: rem(12);
+  }
+
+  &__count {
+    font-weight: 700;
+    letter-spacing: rem(-2);
+    line-height: 1;
+    color: var(--dark-text-2);
+
+    &--big {
+      font-size: rem(56);
+      margin-bottom: rem(4);
+    }
+
+    &--small {
+    }
+  }
+
+  &__label {
+    margin-bottom: rem(25);
+    text-transform: uppercase;
+    font-size: rem(12);
+    letter-spacing: rem(5);
+  }
+
+  &__change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: rem(12);
+
+    &--up {
+      color: var(--limegreen);
+    }
+
+    &--down {
+      color: var(--brightred);
+    }
+
+    img {
+      margin-right: rem(4);
+    }
+  }
 }
