@@ -6,11 +6,17 @@
   display: grid;
   grid-template-columns: 1fr rem(60) 1fr;
   grid-template-rows: repeat(2, 1fr);
-  gap: 0 rem(12);
+  gap: rem(4.8) rem(8);
   border: none;
+  margin: 0;
+  padding: 0;
 
   label {
     cursor: pointer;
+    font-weight: 700;
+    font-size: rem(14);
+    align-self: center;
+    color: var(--dark-text-1);
 
     &[for='dark'] {
       grid-column: 1 / 2;
@@ -21,6 +27,7 @@
       grid-column: 1 / 4;
       grid-row: 2 / 3;
       justify-self: center;
+      align-self: start;
     }
 
     &[for='light'] {
@@ -45,6 +52,10 @@
     height: rem(24);
     opacity: 0;
     cursor: pointer;
+
+    &:focus ~ .toggle__switcher {
+      // border: 2px solid red;
+    }
   }
 
   &__background {
