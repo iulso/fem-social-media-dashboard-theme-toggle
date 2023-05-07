@@ -54,7 +54,10 @@
     cursor: pointer;
 
     &:focus ~ .toggle__switcher {
-      // border: 2px solid red;
+      top: rem(2);
+      border: 2px solid var(--dark-text-1);
+      width: calc(rem(18) - 2px);
+      height: calc(rem(18) - 2px);
     }
   }
 
