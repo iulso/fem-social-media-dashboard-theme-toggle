@@ -2,14 +2,14 @@
 
 .card {
   border-radius: rem(5);
-  background-color: var(--dark-card-bg);
+  background-color: var(--card-bg);
   padding: rem(25);
   text-align: center;
   transition: background 150ms ease-in-out;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--dark-card-bg-hover);
+    background-color: var(--card-bg-hover);
   }
 
   &--facebook {
@@ -70,7 +70,7 @@
     font-weight: 700;
     letter-spacing: rem(-2);
     line-height: 1;
-    color: var(--dark-text-2);
+    color: var(--text-2);
 
     &--big {
       font-size: rem(56);

@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 // Source: https://css-tricks.com/box-sizing/
 *::after,
 *::before {
@@ -12,7 +14,26 @@ html {
 }
 
 body {
-  background-color: var(--dark-bg);
+  position: relative;
+  margin: 0;
+  background-color: var(--background);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: rem(55);
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: rem(2);
+    background: var(--top-bg);
+
+    @include breakpoint(medium) {
+      top: 0;
+      margin-top: -2.5rem;
+      height: calc(rem(140) + rem(120));
+    }
+  }
 }
 
 .visually-hidden {

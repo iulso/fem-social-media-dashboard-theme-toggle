@@ -14,7 +14,7 @@
     align-self: center;
     font-weight: 700;
     font-size: rem(14);
-    color: var(--dark-text-2);
+    color: var(--toggle-text);
 
     &[for='dark'] {
       grid-column: 1 / 2;
@@ -39,7 +39,7 @@
 
     &:focus ~ .toggle__switcher {
       top: rem(2);
-      border: 2px solid var(--dark-text-2);
+      border: 2px solid var(--text-2);
       width: calc(rem(18) - 2px);
       height: calc(rem(18) - 2px);
     }
@@ -69,7 +69,7 @@
     width: rem(18);
     height: rem(18);
     border-radius: 50%;
-    background-color: var(--dark-bg);
+    background-color: var(--background);
     transition: all 0.1s ease-in-out;
   }
 
