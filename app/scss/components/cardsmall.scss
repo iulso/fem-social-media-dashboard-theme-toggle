@@ -1,0 +1,24 @@
+@use '../util/' as *;
+
+.card-small {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: start;
+  row-gap: rem(23);
+
+  .card__subtitle {
+    font-weight: 700;
+    font-size: rem(12);
+  }
+
+  .card__count,
+  .card__change {
+    align-self: end;
+  }
+
+  img,
+  .card__change {
+    justify-self: end;
+  }
+}

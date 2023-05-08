@@ -10,7 +10,7 @@
   }
 }
 
-.cards-grid-main {
+.cards-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: rem(30);
@@ -22,7 +22,8 @@
   @include breakpoint(large) {
     grid-template-columns: repeat(4, 1fr);
   }
-}
 
-.cards-grid-secondary {
+  &--2nd {
+    row-gap: rem(23);
+  }
 }
