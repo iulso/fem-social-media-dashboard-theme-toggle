@@ -1,11 +1,16 @@
 @use '../util' as *;
 
 .card {
-  //width: rem(255); //tmp
   border-radius: rem(5);
   background-color: var(--dark-card-bg);
   padding: rem(25);
   text-align: center;
+  transition: background 150ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--dark-card-bg-hover);
+  }
 
   &--facebook {
     border-top: rem(4) solid var(--facebook);
