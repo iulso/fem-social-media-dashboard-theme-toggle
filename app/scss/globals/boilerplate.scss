@@ -14,3 +14,12 @@ html {
 body {
   background-color: var(--dark-bg);
 }
+
+.visually-hidden {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
