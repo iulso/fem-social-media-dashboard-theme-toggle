@@ -10,10 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iulso/fem-social-media-dashboard-theme-toggle/issues"
-  },
-  "homepage": "https://github.com/iulso/fem-social-media-dashboard-theme-toggle#readme",
   "dependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
